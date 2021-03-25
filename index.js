@@ -42,7 +42,7 @@ client.connect(err => {
       $set : {price:req.body.price , quantity:req.body.quantity}
     })
     .then(result =>{
-      res.send(result.modifiedCount>0);
+      res.send(result.modifiedCount>0)
     })
   })
 
